@@ -1,0 +1,13 @@
+body {
+    background-color: steelblue;
+}
+
+h1 {
+text-align: center;
+color: white;
+font-weight: bolder;
+}
+
+#burger-form {
+    text-align: center;
+}

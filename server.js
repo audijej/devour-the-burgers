@@ -1,8 +1,8 @@
-var express = require("express");
+let express = require("express");
+let path = require('path');
+let PORT = process.env.PORT || 8080;
 
-var PORT = process.env.PORT || 8080;
-
-var app = express();
+let app = express();
 
 app.use(express.static("public"));
 
@@ -12,12 +12,12 @@ app.use(express.json());
 //////Handlebar routing/////////////
 
 
-var exphbs = require("express-handlebars");
+let exphbs = require("express-handlebars");
 
 app.engine("handlebars", exphbs({ defaultLayout: "main"}));
 app.set("view engine", "handlebars");
 
-var routes = require("./controllers/burger_controller.js");
+let routes = require("./controllers/burger_controller.js");
 
 app.use(routes);
 
