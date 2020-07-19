@@ -8,6 +8,11 @@ color: white;
 font-weight: bolder;
 }
 
-#burger-form {
+.create-form {
     text-align: center;
+}
+
+#burgerBoxLabel {
+    font-size: 20px;
+    font-weight: bolder;
 }
