@@ -1,8 +1,8 @@
 <ul>
-    {{id}}: {{burger_name}} --devoured: {{devoured}}
+   <span id="burgerList"> {{id}}: {{burger_name}} --devoured: {{devoured}} </span>
 
     <button class="change-devour" data-id="{{id}}" data-newDevour="{{devour}}">
-        {{#if devour}}Devour it!{{else}}Devoured!{{/if}}
+        {{#if devour}}Devour it!{{else}}Eat it again!{{/if}}
     </button>
 
     <button class="delete" data-id="{{this.id}}">DELETE!</button>

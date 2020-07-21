@@ -16,3 +16,47 @@ font-weight: bolder;
     font-size: 20px;
     font-weight: bolder;
 }
+
+.fa-hamburger {
+    font-size: 200px;
+    text-align: center;
+    color: tan;
+}
+
+.container {
+    text-align: center;
+}
+
+button {
+    border: 0.5px solid black;
+}
+
+button:hover {
+    background-color: tan;
+    color: white;
+    transition: 0.5s;
+}
+
+#burgerList {
+    color: white;
+    font-weight: bold;
+}
+
+footer {
+    background-color: rgb(6, 104, 184);
+    color: white;
+    text-align: center;
+    margin-top: auto;
+    width: 100%;
+}
+
+i {
+    color: white;
+    font-size: 25px;
+    transition: 0.5s;
+}
+
+i:hover {
+    color: peru;
+    transition: 0.5s;
+}

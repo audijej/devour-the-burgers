@@ -1,40 +1,55 @@
 <div class="container">
 
+    <i class="fas fa-hamburger"></i>
+
     <h1>Eat More Burgers!</h1>
 
-<form class="create-form">
-
-  <div class="form-group">
-    <label for="burgerBox" id="burgerBoxLabel">Enter your burger here...</label>
     <br>
-    <textarea class="form-control-file" id="burgerBox" rows="3"></textarea>
-  </div>
 
-  <button type="submit">Add a Burger</button>
-</form>
+    <form class="create-form">
 
-<h3>Eat these burgers</h3>
+        <div class="form-group">
+            <label for="burgerBox" id="burgerBoxLabel">Enter your burger here...</label>
+            <br>
+            <br>
+            <textarea class="form-control-file" id="burgerBox" rows="3"></textarea>
+        </div>
 
-<ul>
-  {{#each burgers}}
-    {{#unless devoured}}
-      {{> burgers/burger-block devour=true}}
-    {{/unless}}
-  {{/each}}
-</ul>
+        <button type="submit">Add a Burger</button>
+    </form>
+    <br>
+    <h3>Eat these burgers</h3>
+    <br>
+    <ul>
+        {{#each burgers}}
+        {{#unless devoured}}
+        {{> burgers/burger-block devour=true}}
+        {{/unless}}
+        {{/each}}
+    </ul>
 
-<div id="deletedBurgerDiv">
-    
+    <div id="deletedBurgerDiv">
+
+    </div>
+
+    <h3>Devoured burgers</h3>
+    <div class="devourSomeBurger"></div>
+    <br>
+    <ul>
+        {{#each burgers}}
+        {{#if devoured}}
+        {{> burgers/burger-block devour=false}}
+        {{/if}}
+        {{/each}}
+    </ul>
+
 </div>
 
-<h3>Devoured burgers</h3>
+<footer>
+    <h5>Project By: Jesse A.</h5>
+    <a href="https://www.linkedin.com/in/jesse-a-0617881a2?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BkIR0XT9mQlaD%2F6EEsl6UAQ%3D%3D"
+        target="blank"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
+    <a href="https://github.com/audijej" target="blank"><i class="fab fa-github"></i></a>
+    <a href="https://www.instagram.com/audigoodness/" target="blank"><i class="fab fa-instagram-square"></i></a>
 
-<ul>
-  {{#each burgers}}
-    {{#unless devoured}}
-      {{> burgers/burger-block devour=false}}
-    {{/unless}}
-  {{/each}}
-</ul>
-
-</div>
+</footer>
