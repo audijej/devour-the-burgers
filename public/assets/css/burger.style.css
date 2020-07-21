@@ -32,7 +32,7 @@ button {
 }
 
 button:hover {
-    background-color: tan;
+    background-color: peru;
     color: white;
     transition: 0.5s;
 }
@@ -48,7 +48,7 @@ footer {
     text-align: center;
     margin-top: auto;
     width: 100%;
-}
+    }
 
 i {
     color: white;
